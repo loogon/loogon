@@ -12,5 +12,24 @@
     "name": "mongodb",
     "user": "",
     "connector": "mongodb"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.126.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "loogon_dev@126.com",
+          "pass": "#include"
+        }
+      }
+    ]
   }
 }
